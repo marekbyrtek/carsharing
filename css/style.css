@@ -93,7 +93,7 @@ h2 {
     color: var(--primary-font-color);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 37px 40px 36px 40px;
+    padding: 37px 40px;
 }
 
 .header-menu-content:hover {
@@ -344,6 +344,7 @@ h1 {
     max-width: 904px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,6 +384,8 @@ h1 {
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding-left: 8px;
 }
@@ -412,4 +415,114 @@ input[type="email"] {
 textarea {
     min-height: 140px;
     margin-bottom: 20px;
+}
+
+.checkbox {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--service-font-color);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    height: 22px;
+    width: 100px;
+    margin-top: 4px;
+    margin-right: 10px;
+    background-color: var(--primary-font-color);
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url("../images/Icon Check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-form-button {
+    background-color: var(--primary-font-color);
+    margin-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--button-color);
+    text-transform: uppercase;
+    padding: 10px 52px;
+    border: 1px solid var(--button-color);
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #28272C;
+    padding: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    cursor: default;
+}
+
+.footer-logo-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+    text-transform: uppercase;
+}
+
+.footer-logo-red {
+    font-weight: 800;
+    color: var(--button-color);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.footer-column {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.copyright {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #D1D1D1;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav-list {
+    min-height: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-nav {
+    margin-left: 140px;
+}
+
+.footer-nav-element {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-font-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-nav-element:hover {
+    color: var(--button-color);
+    transition: 0.5s;
 }
