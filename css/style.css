@@ -424,11 +424,13 @@ textarea {
 }
 
 input[type="checkbox"] {
+    flex-grow: 0;
+    flex-shrink: 0;
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
     height: 22px;
-    width: 100px;
+    width: 22px;
     margin-top: 4px;
     margin-right: 10px;
     background-color: var(--primary-font-color);
